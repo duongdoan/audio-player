@@ -1,0 +1,12 @@
+Listen to Tidal on MoodeAudio
+sudo apt-get install software-properties-common
+sudo apt-get update
+sudo apt-get install openjdk-8-jre-headless
+wget https://launchpad.net/~bubbleguuum/+archive/bubbleupnpserver/+files/bubbleupnpserver_0.9-5_all.deb
+sudo dpkg -i bubbleupnpserver_0.9-5_all.deb
+
+Open http://moode.local:58050
+Media Renderers
+Create an OpenHome renderer
+Set Name and Room
+Open Linn Kazoo, wait for room discovered and enter Tidal/Quobuz info
