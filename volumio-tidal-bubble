@@ -1,0 +1,22 @@
+#Install Java
+sudo echo "deb http://http.debian.net/debian jessie-backports main" > /etc/apt/sources.list.d/jessie-backports.list
+sudo apt-get update
+sudo apt-get install -t jessie-backports openjdk-8-jdk-headless
+
+#Download Bubble Upnp
+mkdir bubbleupnp
+cd bubbleupnp
+wget https://bubblesoftapps.com/bubbleupnpserver/BubbleUPnPServer-distrib.zip
+unzip BubbleUPnPServer-distrib.zip
+wget https://bubblesoftapps.com/bubbleupnpserver/ffmpeg_binaries/linux/arm/v7/ffmpeg
+sudo chmod + x launch.sh
+./launch.sh
+
+
+
+
+Open http://volumio.local:58050
+Media Renderers
+Create an OpenHome renderer 
+Set Name and Room: Volumio Bubble), Don't leave it as Volumio
+Open Linn Kazoo, wait for room discovered and enter Tidal/Quobuz info
