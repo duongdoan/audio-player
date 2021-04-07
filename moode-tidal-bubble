@@ -2,7 +2,9 @@ Listen to Tidal on MoodeAudio
 sudo apt-get install software-properties-common
 sudo apt-get update
 sudo apt-get install openjdk-8-jre-headless
-wget https://launchpad.net/~bubbleguuum/+archive/bubbleupnpserver/+files/bubbleupnpserver_0.9-5_all.deb
+#wget https://launchpad.net/~bubbleguuum/+archive/bubbleupnpserver/+files/bubbleupnpserver_0.9-5_all.deb
+#wget https://bubblesoftapps.com/bubbleupnpserver/bubbleupnpserver_0.9-6_all.deb
+wget https://github.com/duongdoan/audio-player/raw/main/bubbleupnpserver_0.9-5_all.deb
 sudo dpkg -i bubbleupnpserver_0.9-5_all.deb
 
 Open http://moode.local:58050
