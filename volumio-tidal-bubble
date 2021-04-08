@@ -13,7 +13,28 @@ sudo chmod + x launch.sh
 ./launch.sh
 
 
+#Install service
+sudo cp -r bubbleupnp /usr/bin/bubbleupnp
+sudo nano /etc/systemd/system/bubbleupnp.service 
 
+#Start bubbleupnp.service content
+[Unit]
+Description=Bubble Upnp
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/bubbleupnp/launch.sh
+
+[Install]
+WantedBy=multi-user.target
+#End bubbleupnp.service content
+
+#Enable service
+systemctl daemon-reload
+systemctl enable bubbleupnp.service
+systemctl start bubbleupnp.service
 
 Open http://volumio.local:58050
 Media Renderers
