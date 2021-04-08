@@ -39,5 +39,5 @@ systemctl start bubbleupnp.service
 Open http://volumio.local:58050
 Media Renderers
 Create an OpenHome renderer 
-Set Name and Room: Volumio Bubble), Don't leave it as Volumio
+Set Name and Room: (Name: Volumio, Room: Volumio Bubble), Don't leave it as default, might not work
 Open Linn Kazoo, wait for room discovered and enter Tidal/Quobuz info
